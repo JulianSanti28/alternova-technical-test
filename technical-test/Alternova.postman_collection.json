@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "841f51c9-5025-42a8-8397-8048d18f6394",
+		"name": "Alternova",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19376317"
+	},
+	"item": [
+		{
+			"name": "GetRandomItem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "54.86.58.130:8080/api/v1/media-item/random",
+					"host": [
+						"54",
+						"86",
+						"58",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"media-item",
+						"random"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSortedBy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "54.86.58.130:8080/api/v1/media-item/sort?sort=name",
+					"host": [
+						"54",
+						"86",
+						"58",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"media-item",
+						"sort"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetByFilters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "54.86.58.130:8080/api/v1/media-item/filter?genre=Drama",
+					"host": [
+						"54",
+						"86",
+						"58",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"media-item",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "MOVIE",
+							"disabled": true
+						},
+						{
+							"key": "genre",
+							"value": "Drama"
+						},
+						{
+							"key": "type",
+							"value": "SERIES",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MarkAsViewed",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "54.86.58.130:8080/api/v1/media-item/2/mark-as-viewed",
+					"host": [
+						"54",
+						"86",
+						"58",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"media-item",
+						"2",
+						"mark-as-viewed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RateMediaItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "54.86.58.130:8080/api/v1/media-item/1/rate?score=5",
+					"host": [
+						"54",
+						"86",
+						"58",
+						"130"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"media-item",
+						"1",
+						"rate"
+					],
+					"query": [
+						{
+							"key": "score",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
