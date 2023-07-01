@@ -129,7 +129,7 @@ public class MediaItemServiceImpl implements IMediaItemService {
         this.mediaItemRepository.save(mediaItem);
     }
 
-    private Double getRating(final MediaItem mediaItem) {
+    public Double getRating(final MediaItem mediaItem) {
         List<Rating> ratings = mediaItem.getRatings();
         return ratings.stream()
                 .mapToDouble(Rating::getScore)
