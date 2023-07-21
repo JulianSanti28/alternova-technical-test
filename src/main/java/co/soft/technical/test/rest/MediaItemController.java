@@ -11,7 +11,7 @@ import java.util.List;
 @RequestMapping("/media-item")
 public class MediaItemController {
 
-    // ~ Dependencies : Write this line to create a conflict with remote branch
+    // ~ Dependencies : This change is to PR in main and develop
     // ====================================================================
     private final IMediaItemService mediaItemService;
 
