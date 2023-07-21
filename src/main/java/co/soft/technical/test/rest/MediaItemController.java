@@ -11,7 +11,7 @@ import java.util.List;
 @RequestMapping("/media-item")
 public class MediaItemController {
 
-    // ~ Dependencies : Comment added in main branch to fix bug :D
+    // ~ Dependencies
     // ====================================================================
     private final IMediaItemService mediaItemService;
 
