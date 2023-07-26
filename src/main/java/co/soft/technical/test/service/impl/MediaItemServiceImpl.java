@@ -46,6 +46,7 @@ public class MediaItemServiceImpl implements IMediaItemService {
         mediaItem.setRating(getRating(mediaItem));
         mediaItem.setRating(0.0);
         mediaItem.setViews(15);
+        //hotfix bug in master
         return this.mediaItemMapper.toDto(mediaItemOptional.get());
     }
 
