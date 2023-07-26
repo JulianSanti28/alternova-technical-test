@@ -44,6 +44,8 @@ public class MediaItemServiceImpl implements IMediaItemService {
         if(mediaItemOptional.isEmpty()) throw new ObjectNotFoundException("media.item.object.not.found");
         MediaItem mediaItem = mediaItemOptional.get();
         mediaItem.setRating(getRating(mediaItem));
+        mediaItem.setRating(0.0);
+        mediaItem.setViews(15);
         return this.mediaItemMapper.toDto(mediaItemOptional.get());
     }
 
